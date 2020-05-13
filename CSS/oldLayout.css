@@ -1,0 +1,189 @@
+html{
+    width: 100%;
+    background-image: url("../images/backBackground2.jpg");
+    background-size: 100% 100%;
+}
+
+body{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 600px;
+    max-width: 2000px;
+    font-family: 'Plaza';
+}
+
+@font-face{
+    font-family: 'Plaza';
+    src:
+        url('fonts/Plaza/Plaza\ Regular.ttf') format('truetype');  
+}
+
+/*grid stuff*/
+.grid-container {
+    background-image: url("../images/loadingScreenBrown.jpg"); 
+    background-size: 100% 50%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 150px 1fr 1fr 1fr 55px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 80px;
+    color:black;
+    border-radius: 5px;
+}
+
+.box {
+    background-color:rgb(0, 128, 0);
+    color:black;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline;
+}
+
+.flowNav{
+    background-image: url(../images/ticket.jpg);
+    background-size: 100% 100%;
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:5;
+    position: fixed;
+    left: 130px;
+    height: 300px;
+    text-decoration: none;
+    color: black;
+}
+
+.flowNav ul li a:link, .flowNav ul li a:visited{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.info {
+    background-image: url(../images/PleaseStandBy.png);
+    background-size: 100% 100%;
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end:2;
+    position: relative;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+}
+.info p{
+    top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.comertial {
+    background-image: url(../images/Loading_Screen_Red.png);
+    background-size: 100% 100%;
+    padding-left: 286px;
+    padding-top: 135px;
+    grid-column-start:3;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:2;
+    position: relative;
+}
+.gallary {
+    padding-left: 100px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+    background-image: url(../images/hacking.jpg);
+    background-size: 100% 100%;
+    grid-column-start:2;
+    grid-column-end:5;
+    grid-row-start:2;
+    grid-row-end:3;
+    position: relative;
+}
+.specs {
+    background-image: url(../images/pictureCollage.jpg);
+    background-size: 100% 100%;
+    grid-column-start:2;
+    grid-column-end:5;
+    grid-row-start:3;
+    grid-row-end:5;
+    position: relative;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: rgb(168, 168, 168);
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.specs p{
+    color: rgb(226, 204, 172);
+}
+
+/*header nav stuff*/
+.headerNav{
+    background-color: rgb(187, 103, 0);
+    height: 120Px;
+    font-size: 70px;
+    border-radius: 10px;
+}
+
+.headerNav img{
+    float: left;
+}
+
+.headerNav ul li{
+    float: left;
+    list-style: none;
+    display: block;
+    margin: 20px;
+}
+
+.headerNav a{
+    text-decoration: none;
+}
+
+.headerNav a:active, .headerNav ul li a:hover{
+    color: rgb(255, 228, 196);
+    background-color: rgb(255, 154, 30);
+    border-radius: 30px;
+}
+
+.headerNav a:link, .headerNav a:visited{
+    color: rgb(165, 148, 128);
+    background-color: rgb(187, 103, 0);
+}
+
+/*heading stuff*/
+.gallary h3{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+/*other stuff*/
+img{
+    border-radius: 5px;
+}
+
+h3,p{
+    margin: 1px 1px 1px 1px;
+}
+
+/*footer stuff*/
+footer{
+    clear: both;
+    font-size: 70px;
+    border-radius: 10px;
+    background-color: rgb(0, 34, 27);
+    height: 100px;
+    box-sizing: border-box;
+}
+
+footer ul li{
+    float: left;
+    list-style: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+footer ul li a{
+    color: gold;
+}

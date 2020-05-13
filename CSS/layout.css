@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'arvo';
+    src: url('fonts/Arvo-Regular.ttf') format('truetype'), 
+         url('fonts/Arvo-Italic.ttf') format('truetype'),
+         url('fonts/Arvo-BoldItalic.ttf') format('truetype'),
+         url('fonts/Arvo-Bold.ttf') format('truetype');
+}
+
+
+
+
+
+/*Grid Styles*/
+
+    .grid-container {
+        display: grid;
+        grid-gap: 11px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 250px 250px 250px 250px 250px 250px 250px 250px 250px 15px;
+        background-color: rgb(0, 132, 255);
+        color: black;
+    }
+
+    .nav {
+        overflow:hidden;
+        background-color: white;
+        position: fixed;
+        z-index: 4;
+        width: 100px;
+        height: 300px;
+        list-style: none;
+    }
+    .box {
+        background-color: white;
+        color: black;
+        padding: 5px;
+        font-size: 100%;
+        display: inline;
+        z-index: 0;
+        overflow-wrap: break-word;
+        font-family: 'arvo';
+        font-size: 0.9em;
+        border-radius: 5px;
+    }
+
+    .header {
+        grid-column-start:2;
+        grid-column-end:5;
+        grid-row-start:1;
+        grid-row-end:2;
+    }
+
+    .desc {
+        grid-column-start:2;
+        grid-column-end:5;
+        grid-row-start:2;
+        grid-row-end:4;
+    }
+
+    .gallery {
+        grid-column-start:2;
+        grid-column-end:5;
+        grid-row-start:4;
+        grid-row-end:6;
+        padding-left:30px;
+    }
+
+    .history {
+        grid-column-start:2;
+        grid-column-end:5;
+        grid-row-start:6;
+        grid-row-end:8;
+    }
+
+    .library {
+        grid-column-start:2;
+        grid-column-end:5;
+        grid-row-start:8;
+        grid-row-end:10;
+    }
+
+    .footer {
+        grid-column-start:2;
+        grid-column-end:5;
+        grid-row-start:10;
+        grid-row-end:11;
+    }
+
+
+/*Box Styles*/
+
+header {
+    text-align: center;
+}
+
+article img {
+    float: right;
+}
+
+article p {
+    float: left;
+    clear: right;
+}
+
+iframe {
+    float: right;
+    
+}
+/*ID's*/
+
+#gallery {
+    text-anchor: unset;
+}
+#top {
+    text-anchor: unset;
+}
+#history {
+    text-anchor: unset;
+}
+#library {
+    text-anchor: unset;
+}
